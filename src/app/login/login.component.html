@@ -1,1 +1,47 @@
-<p>login works!</p>
+<div class="login-page">
+    <div class="left">
+        <img src="/assets/images/Icon.svg" alt="icon" />
+        <p><strong class="strong">Enterprise-grade Management</strong></p>
+        <p>Secure, scalable, and compliant healthcare infrastructure for modern clinic networks.</p>
+        <div class="testimonial">
+            <div class="top">
+                <img src="../../assets/images/face.svg" alt="A woman's face" />
+                <div class="details">
+                    <p><strong>Dr Sarah Jenkins</strong></p>
+                    <p>Chief of Medicine, Metro Health</p>
+                </div>
+            </div>
+            <p>"ClinicSaaS has completely unified our multi-tenant operations. The security and role management are unmatched."</p>
+        </div>
+    </div>
+    <div class="right">
+        <p><strong class="strong">Enterprise SignIn</strong></p>
+        <p>Welcome back. Please enter your credentials to access your organization's dashboard.</p>
+        <form class="form">
+            <label>Tenant ID</label>
+            <div class="input">
+                <img src="../../assets/images/tenant-id.svg" alt="a tower" class="input-icon"/>
+                <input type="text" placeholder="e.g Metro-health-group" />
+            </div>
+            <label>Email Address</label>
+            <div class="input">
+                <img src="../../assets/images/email.svg" alt="an envelope" class="input-icon" />
+                <input type="email" placeholder="name@organization.com" />
+            </div>
+            <label>Password</label>
+            <div class="input">
+                <img src="../../assets/images/password.svg" alt="a padlock" class="input-icon" />
+                <input type="password" placeholder="Enter your password" />
+            </div>
+            <div class="necessity">
+                <input type="checkbox" />Keep me logged in
+                <a routerLink="/forgot-password">Forgot Password?</a>
+            </div>
+            <button class="signin-button">
+                <img src="../../assets/images/signin.svg" alt="a vector door" class="icon" />
+                Sign in to Dashboard
+            </button>
+            <p>Not part of an organization yet? <span><a routerLink="/contact-sales">Contact Sales</a></span> or  <span><a routerLink="/request-demo">Request a demo</a></span></p>
+        </form>
+    </div>
+</div>

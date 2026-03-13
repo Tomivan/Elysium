@@ -1,0 +1,187 @@
+.login-page {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+.left {
+  width: 40%;
+  padding: 2em;
+  background: var(--primary-color);
+  color: #ffffff;
+}
+
+.strong {
+  font-size: 2em;
+}
+
+.testimonial {
+  margin-top: 5em;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1em;
+  border-radius: 0.5em;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.right {
+  width: 60%;
+  padding: 1.5em;
+  margin-left: 3em;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.top {
+  display: flex;
+}
+
+.details {
+  margin-left: 1em;
+}
+
+.details p {
+  margin: 0;
+}
+
+.form {
+  margin-top: 2em;
+  width: 35vw;
+}
+
+label {
+  margin-bottom: 0.5em;
+  display: block;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5em;
+  margin-bottom: 1.5em;
+  background-color: var(--input-bg);
+  transition: border-color 0.2s ease, background-color 0.3s ease;
+}
+
+.input:focus-within {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(19, 91, 236, 0.1);
+}
+
+.input-icon {
+  width: 1.25em;
+  height: 1.25em;
+  padding: 0 0.75em;
+  opacity: 0.6;
+  filter: var(--icon-filter, none);
+}
+
+/* Icons in dark mode */
+.dark-theme .input-icon {
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+}
+
+.input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.75em 0.75em 0.75em 0;
+  margin-bottom: 0;
+  height: auto;
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.input input::placeholder {
+  color: var(--text-secondary);
+}
+
+.necessity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5em;
+  font-size: 0.9em;
+  color: var(--text-secondary);
+}
+
+.necessity input[type="checkbox"] {
+  width: auto;
+  height: auto;
+  margin-right: 0.5em;
+  margin-bottom: 0;
+  accent-color: var(--primary-color);
+}
+
+.necessity a {
+  margin-left: auto;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.necessity a:hover {
+  text-decoration: underline;
+}
+
+.signin-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1em;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 0.5em;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 1.5em;
+}
+
+.signin-button:hover {
+  background-color: var(--primary-hover);
+}
+
+.signin-button .icon {
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 0.5em;
+  filter: brightness(0) invert(1);
+}
+
+.right > p:last-of-type {
+  color: var(--text-secondary);
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.right > p:last-of-type a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.right > p:last-of-type a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+  }
+  
+  .left, .right {
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .form {
+    width: 100%;
+  }
+}
